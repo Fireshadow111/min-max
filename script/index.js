@@ -4,12 +4,12 @@ let calButton1 = document.getElementById('calButton1');
 let calButton2 = document.getElementById('calButton2');
 
 //array
-let minMaxArray = [4,, 11, 22, 7, 111];
+let minMaxArray = [4, 11, 22, 7, 111];
 
 // function to calculate min value
 function min() {
     //using a rest parameter to loop through every value in the array and return the min value
-    result = Math.min(...minMaxArray);
+     result = Math.min(...minMaxArray);
     minMaxOutput.value = result;
 }
 // function to calculate max value
