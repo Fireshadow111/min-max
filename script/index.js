@@ -1,22 +1,22 @@
+// 
 let minMaxOutput = document.getElementById('min-maxOutput');
-let calButton1 = document.getElementById('calButton1').value;
-let calButton2 = document.getElementById('calButton2').value;
+let calButton1 = document.getElementById('calButton1');
+let calButton2 = document.getElementById('calButton2');
 
-// Array to calculate min and max
-let minMaxArray = [1, 4, 7, 11];
+//array
+let minMaxArray = [4, 7, 111];
 
-// Event listener for the Min button
-
+// function to calculate min value
 function min() {
-result = Math.min(minMaxArray)
-
+    //using a rest operator to loop through every value in the array
+    result = Math.min(...minMaxArray);
+    minMaxOutput.value = result;
 }
-
+// function to calculate max value
 function max() {
-
-result = Math.max(minMaxArray)
-
+    //using a rest operator to loop through every value in the array
+    result = Math.max(...minMaxArray);
+    minMaxOutput.value = result;
 }
-
-calButton1.addEventListener('click',)
-calButton2.addEventListener('click',)
+calButton1.addEventListener('click', min);
+calButton2.addEventListener('click', max);
